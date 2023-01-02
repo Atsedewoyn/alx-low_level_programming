@@ -1,20 +1,21 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
+#include <stdio.h>
 
-/* betty style doc for function main goes there */
+/**
+ * main - Prints the alphabet in lowercase, except for q and e.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	char c = 'a';
-	while(c<= 'z');
+	char letter;
+
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
-		if(c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
-		c++;
+		if (letter != 'e' && letter != 'q')
+			putchar(letter);
 	}
+
 	putchar('\n');
 
 	return (0);
-}
+}}
